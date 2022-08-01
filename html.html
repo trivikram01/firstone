@@ -1,0 +1,62 @@
+<html>
+<head>
+<style>
+.div1
+{
+width:300px;
+height:300px;
+border:3px solid red;
+
+}
+
+.button
+{
+width:300px;
+
+}
+
+.divM
+{
+width:350px;
+height:300px;
+border:3px solid green;
+margin:200px;
+padding:50px; 
+  display: flex;
+
+}
+</style>
+
+<script>
+
+function imgChange1( img )
+ {
+ document.getElementById("lamp1").src = img;
+document.getElementById("lamp1").height = "600"
+document.getElementById("lamp1").width = "600"
+}
+function imgChange2( img )
+ {
+ document.getElementById("lamp1").src = img;
+document.getElementById("lamp1").height = "320"
+document.getElementById("lamp1").width = "250"
+}
+
+
+</script>
+</head>
+<body>
+<center>
+<h1>
+CARS
+</h1>
+
+<div>
+
+<p>
+<img id="lamp1" onmouseover="imgChange1('download2.jpg')" onmouseout="imgChange2('download3.jpg')" src="download3.jpg" height="320" width="250" alt="Lamp turned off" border="0" name="lamp1"></img>
+</p>
+</div>
+</center>
+</body>
+</html>
