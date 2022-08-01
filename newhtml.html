@@ -1,0 +1,78 @@
+<html lang="en">
+
+<head>
+    
+    <title>Document</title>
+    <style>
+        .Main{
+            padding: 10px;
+            border-radius: 10px 10px 10px 10px;
+            background-color: aqua;
+        }
+        img{
+            border: 1px groove blue;
+        }
+        input{
+            margin-left: 150px;
+            width: 100px;
+            height: 30px;
+            background-color: tomato;
+            color: white;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            border-radius: 20px;
+            border: none;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="Main">
+        <table>
+            <tr>
+                <td>
+                    <div>
+                        <!-- Image -->
+                        <img src="download.jpg" alt="" width="400px" height="300px" id="1">
+                    </div>
+                    <div>
+                        <!-- Button -->
+                        <input type="button" value="Image1" onclick="imageChange(0)">
+                    </div>
+                </td>
+                <td>
+                    <div>
+                        <!-- Image -->
+                        <img src="download1.jpg" alt="" width="400px" height="300px"
+                            id="2">
+                    </div>
+                    <div>
+                        <!-- Button -->
+                        <input type="button" value="Image2" onclick="imageChange(1)">
+                    </div>
+                </td>
+                <td>
+                    <div>
+                        <!-- Image -->
+                        <img src="download2.jpg" alt="" width="400px" height="300px"
+                            id="3">
+                    </div>
+                    <div>
+                        <!-- Button -->
+                        <input type="button" value="Image3" onclick="imageChange(2)">
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <script>
+        const list = ["download.jpg","download1.jpg","download2.jpg","download3.jpg","download4.jpg","download5.jpg"];
+        function imageChange(number) {
+            document.getElementById(1).src = list[number];
+            document.getElementById(2).src = list[number];
+            document.getElementById(3).src = list[number];
+        }
+    </script>
+</body>
+
+</html>
